@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std ;
+
+   const string a = "iron pill";
+    const string b = "antibiotic";
+    const string c = "aspirin";
+    const string d = "decongestant";
+int pill;
+void info_time (int& ){
+switch (pill){
+    case 1 :
+    cout<<"\n clock: 08:00,12:00,18:00";
+    break;
+    case 2:
+    cout<< "\n clock: every 4 hours starting at 04:00";
+    break;
+    case 3 :
+    cout<< " \n clock: 08:00,21:00";
+    break;
+    case 4 :
+    cout<< "\n clock: 11:00, 20:00";
+    break;
+    default :
+    cout<< "wrong!!";
+}
+
+
+}
+
+
+int main (){
+
+
+   cout<< "hello please enter your choice:"<<endl;
+   cout<< "1:"<< a <<endl;
+   cout<< "2:"<< b << endl;
+    cout<< "3:"<< c << endl;
+     cout<< "4:" <<d << endl;
+   cin>> pill;
+
+   info_time(pill);
+return 0;
+}
